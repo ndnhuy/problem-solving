@@ -1,0 +1,6 @@
+        Path dir = Paths.get("D:\\Google Drive - 2\\Books\\IT");
+        Files.list(dir)
+                .filter(f -> f.getFileName().toString().equals("Java"))
+                .map(FileProcessingMain::toStreamPath)
+                .map(book -> book.map(b -> new String[] {"Java", b.getFileName().toString()}))
+                .forEach(c -> c.forEach(k -> System.out.println(k[0] + "-" + k[1])));
