@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/fragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$APPLICATION_CONFIG_DIR$/consoles/db/1280ea34-375b-4fd9-8d35-ca92e0aaf31e/console.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.39/mysql-connector-java-5.1.39.jar!/com/mysql/jdbc/ConnectionPropertiesImpl.class">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-batch-ws/core/src/main/java/com/lexisnexis/healthcare/dss/ws/batch/core/dto/AuditBatchDTO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-batch-ws/core/src/test/java/com/lexisnexis/healthcare/dss/ws/batch/core/dao/AuditBatchDaoTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-batch-ws/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-batch-ws/webservice/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-batch-ws/webservice/src/main/java/com/lexisnexis/healthcare/dss/ws/batch/model/AuditBatch.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-batch-ws/webservice/src/test/java/com/lexisnexis/healthcare/dss/ws/batch/rest/AuditBatchRestTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-batch-ws/webservice/src/test/java/com/lexisnexis/healthcare/dss/ws/integration/batch/rest/AuditBatchRestIT.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-export-ws/core/src/main/java/com/lexisnexis/healthcare/dss/ws/export/core/job/AbstractMultipleFileWriter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-export-ws/core/src/main/java/com/lexisnexis/healthcare/dss/ws/export/core/job/source/SourceCorrectionReader.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-export-ws/core/src/main/java/com/lexisnexis/healthcare/dss/ws/export/core/job/source/SourceCorrectionWriter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-export-ws/core/src/main/java/com/lexisnexis/healthcare/dss/ws/export/core/service/SimpleTransformService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/main/java/com/lexisnexis/healthcare/dss/ui/resolution/config/FieldConfig.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/main/java/com/lexisnexis/healthcare/dss/ui/resolution/controller/ResolutionErrorController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/main/java/com/lexisnexis/healthcare/dss/ui/resolution/controller/ResolutionWorkflowController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/main/java/com/lexisnexis/healthcare/dss/ui/resolution/controller/SourceController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/main/java/com/lexisnexis/healthcare/dss/ui/resolution/gateway/HcoReferenceDataGateway.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/main/java/com/lexisnexis/healthcare/dss/ui/resolution/gateway/HcpReferenceDataGateway.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/main/java/com/lexisnexis/healthcare/dss/ui/resolution/gateway/ProfileGateway.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/main/java/com/lexisnexis/healthcare/dss/ui/resolution/model/SourceRequest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/main/resources/public/resolution-ui/css/components/button.css">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/main/resources/public/resolution-ui/js/button/audit-navigation.button.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/main/resources/public/resolution-ui/js/button/button.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/main/resources/public/resolution-ui/js/button/entity/add-address.button.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/main/resources/public/resolution-ui/js/button/source/add-row.button.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/main/resources/public/resolution-ui/js/button/source/apply-changes.button.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/main/resources/public/resolution-ui/js/panel/golden-profile.panel.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/main/resources/public/resolution-ui/js/panel/source-data.panel.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/main/resources/public/resolution-ui/js/resolution-entity.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/main/resources/public/resolution-ui/js/resolution-source.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/main/resources/public/resolution-ui/js/resolution.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/main/resources/public/resolution-ui/js/store/golden-profile.store.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/main/resources/public/resolution-ui/js/store/source-data.store.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/main/resources/templates/fragments/button-panel/component-source_data.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/main/resources/templates/fragments/collapsible-panel.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/main/resources/templates/pages/resolution-source.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/test/java/com/lexisnexis/healthcare/dss/ui/resolution/controller/EntityControllerTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/test/java/com/lexisnexis/healthcare/dss/ui/resolution/controller/ResolutionErrorControllerTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/test/java/com/lexisnexis/healthcare/dss/ui/resolution/controller/ResolutionWorkflowControllerTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/test/java/com/lexisnexis/healthcare/dss/ui/resolution/controller/SourceControllerTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/test/java/com/lexisnexis/healthcare/dss/ui/resolution/gateway/HcoReferenceDataGateway.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/test/java/com/lexisnexis/healthcare/dss/ui/resolution/gateway/HcoReferenceDataGatewayTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/test/java/com/lexisnexis/healthcare/dss/ui/resolution/gateway/HcpReferenceDataGateWayTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/test/java/com/lexisnexis/healthcare/dss/ui/resolution/gateway/HcpReferenceDataGatewayTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-resolution-ui/src/test/java/com/lexisnexis/healthcare/dss/ui/resolution/service/ReferenceDataServiceTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-ws/core/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-ws/core/src/main/java/com/lexisnexis/healthcare/dss/ws/audit/core/dao/AuditCommentDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-ws/core/src/main/java/com/lexisnexis/healthcare/dss/ws/audit/core/dao/SourceCorrectionDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-ws/core/src/main/java/com/lexisnexis/healthcare/dss/ws/audit/core/service/AuditCommentService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-ws/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../dolphin/repos/huydatnhatnguyen/master-audit-ws/test/functional/src/main/java/com/lexisnexis/healthcare/swqa/mas/ws/audit/dao/SourceCorrectionDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Main2.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/com/hackerank/Main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/com/hackerank/Node.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/com/hackerank/Pair.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/com/hackerank/TreapTree.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
