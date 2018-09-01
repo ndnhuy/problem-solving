@@ -3,46 +3,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CastleOnTheGrid {
-
     public static void main(String[] args) {
-        Queue<Integer> queue = new Queue<>();
-        queue.put(new Integer[] {1,2,3,4,5,6,7});
-        queue.pop();
-        queue.pop();
-        queue.pop();
-        queue.put(9);
-        queue.put(10);
-        queue.put(11);
-        while (!queue.isEmpty()) {
-            System.out.println(queue.pop());
-        }
-    }
-
-    public static class Cell {
-        final int x;
-        final int y;
-
-        public Cell(int x, int y) {
-            this.x = x;
-            this.y = y;
-        }
-    }
-
-    public static class Path {
-        final Cell start;
-        final Cell end;
-        int level;
-
-        public Path(Cell start, Cell end) {
-            this.start = start;
-            this.end = end;
-        }
-
-        public Path(Cell start, Cell end, int level) {
-            this.start = start;
-            this.end = end;
-            this.level = level;
-        }
+        int rs = minimumMoves(new String[] {
+                "XXXXXXX",
+                "......X",
+                ".XXXX.X",
+                "...XX.X",
+                "...XX..",
+                "...XX..",
+                "...X..X"
+        }, 6, 1, 6, 4);
+        System.out.println(rs);
     }
 
     public static int minimumMoves(String[] grid, int startX, int startY, int goalX, int goalY) {
@@ -59,46 +30,71 @@ public class CastleOnTheGrid {
             if (reachTheGoal(path, goalX, goalY)) {
                 return path.level;
             }
-            Path[] possiblePaths = findNextPossiblePathsFrom(path, visitedCells, grid2d);
-            markAsVisitedPath(path, visitedCells);
-            for (int i = 0; i < possiblePaths.length; i++) {
-                possiblePaths[i].level = path.level + 1;
-                queue.put(possiblePaths[i]);
-            }
+            List<Path> possiblePaths = findNextPossiblePathsFrom(path, visitedCells, grid2d);
+            queue.put(possiblePaths.toArray(new Path[]{}));
         }
 
         return -1;
     }
 
-    private static void markAsVisitedPath(Path path, boolean[][] visitedCells) {
-
+    private static List<Path> findNextPossiblePathsFrom(Path path, boolean[][] visitedCells, char[][] grid2d) {
+        List<Path> paths = new ArrayList<>();
+        for (Cell cell : findCellsOnPath(path)) {
+            paths.addAll(findPossiblePathsFrom(cell, path.level, visitedCells, grid2d));
+        }
+        return paths;
     }
 
-    private static Path[] findNextPossiblePathsFrom(Path path, boolean[][] visitedCells, char[][] grid2d) {
-        List<Path> paths = new ArrayList<>();
+    private static List<Cell> findCellsOnPath(Path path) {
+        List<Cell> cells = new ArrayList<>();
         // Horizontal path
         if (path.start.x == path.end.x) {
             int x = path.start.x;
-            //TODO start does not always stay before end
-            for (int y = path.start.y; y <= path.end.y; y++) {
-                if (visitedCells[x][y]) {
-                    continue;
+            if (path.start.y <= path.end.y) {
+                for (int i = path.start.y; i <= path.end.y; i++) {
+                    cells.add(new Cell(x, i));
                 }
-                paths.addAll(findPossiblePathsFrom(x, y, path.level, visitedCells, grid2d));
+            } else {
+                for (int i = path.start.y; i >= path.end.y; i--) {
+                    cells.add(new Cell(x, i));
+                }
             }
+            return cells;
         }
-        return new Path[1];
+
+        // Vertical path
+        if (path.start.y == path.end.y) {
+            int y = path.start.y;
+            if (path.start.x <= path.end.x) {
+                for (int i = path.start.x; i <= path.end.x; i++) {
+                    cells.add(new Cell(i, y));
+                }
+            } else {
+                for (int i = path.start.x; i >= path.end.x; i--) {
+                    cells.add(new Cell(i, y));
+                }
+            }
+            return cells;
+        }
+
+        throw new RuntimeException("Only support horizontal or vertical path");
     }
 
-    private static List<Path> findPossiblePathsFrom(int x, int y, int level, boolean[][] visitedCells, char[][] grid2d) {
+    private static List<Path> findPossiblePathsFrom(Cell startCell, int currentLevel, boolean[][] visitedCells, char[][] grid2d) {
         List<Path> paths = new ArrayList<>();
-        Cell startCell = new Cell(x, y);
-        // Only pick a path that does not contain any visited cells
+        int level = currentLevel + 1;
+        int x = startCell.x;
+        int y = startCell.y;
 
+        if (grid2d[x][y] == 'X' || visitedCells[x][y]) {
+            return paths;
+        }
+
+        // Only pick a path that does not contain any visited cells
         // Look at the left
-        int yIter = y - 1;
+        int yIter = y;
         boolean visitedCellFound = false;
-        while (yIter >= 0 && grid2d[x][yIter] != 'x') {
+        while (yIter >= 0 && grid2d[x][yIter] != 'X') {
             if (visitedCells[x][yIter]) {
                 visitedCellFound = true;
                 break;
@@ -110,9 +106,9 @@ public class CastleOnTheGrid {
         }
 
         // Look at the right
-        yIter = y + 1;
+        yIter = y;
         visitedCellFound = false;
-        while (yIter < grid2d.length && grid2d[x][yIter] != 'x') {
+        while (yIter < grid2d.length && grid2d[x][yIter] != 'X') {
             if (visitedCells[x][yIter]) {
                 visitedCellFound = true;
                 break;
@@ -124,9 +120,9 @@ public class CastleOnTheGrid {
         }
 
         // Up
-        int xIter = x - 1;
+        int xIter = x;
         visitedCellFound = false;
-        while (xIter >= 0 && grid2d[xIter][y] != 'x') {
+        while (xIter >= 0 && grid2d[xIter][y] != 'X') {
             if (visitedCells[xIter][y]) {
                 visitedCellFound = true;
                 break;
@@ -138,9 +134,9 @@ public class CastleOnTheGrid {
         }
 
         // Down
-        xIter = x + 1;
+        xIter = x;
         visitedCellFound = false;
-        while (xIter < grid2d.length && grid2d[xIter][y] != 'x') {
+        while (xIter < grid2d.length && grid2d[xIter][y] != 'X') {
             if (visitedCells[xIter][y]) {
                 visitedCellFound = true;
                 break;
@@ -150,11 +146,17 @@ public class CastleOnTheGrid {
         if (!visitedCellFound) {
             paths.add(new Path(startCell, new Cell(xIter - 1, y), level));
         }
+
+        visitedCells[x][y] = true;
         return paths;
     }
 
     private static boolean reachTheGoal(Path path, int goalX, int goalY) {
-        return true;
+        return isBetween(goalX, path.start.x, path.end.x) && isBetween(goalY, path.start.y, path.end.y);
+    }
+
+    private static boolean isBetween(int m, int p1, int p2) {
+        return m >= Math.min(p1, p2) && m <= Math.max(p1, p2);
     }
 
     public static class Queue<E> {
@@ -216,6 +218,36 @@ public class CastleOnTheGrid {
             System.arraycopy(circularArr, 0, newArr, headToEnd, tail);
             circularArr = newArr;
             tail = n;
+
+            // Forgot to update the head here that made 6 test cases fail and it took me over an hour to figure this shit out!!!!!!
+            head = 0;
+        }
+    }
+
+    public static class Cell {
+        final int x;
+        final int y;
+
+        public Cell(int x, int y) {
+            this.x = x;
+            this.y = y;
+        }
+    }
+
+    public static class Path {
+        final Cell start;
+        final Cell end;
+        int level;
+
+        public Path(Cell start, Cell end) {
+            this.start = start;
+            this.end = end;
+        }
+
+        public Path(Cell start, Cell end, int level) {
+            this.start = start;
+            this.end = end;
+            this.level = level;
         }
     }
 }
